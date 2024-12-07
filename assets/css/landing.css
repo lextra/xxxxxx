@@ -1,0 +1,118 @@
+body {
+    background-color: #000;
+    font-family: "mc";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "mc";
+    src: url("../fonts/regular.otf") format("opentype");
+}
+
+        @font-face {
+            font-family: 'Satoshi';
+            src: url('Satoshi-Black.ttf') format('truetype');
+        }
+
+        #enter {
+            background-color: #000;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+            z-index: 5;
+            position: absolute;
+            transition: opacity 1s ease-out; 
+            font-size: 20px;
+        }
+
+.landing {
+    text-align: center;
+}
+
+    .landing-logo {
+        margin-top: 30px;
+    }
+
+    .landing a {
+        color: #fff;
+        text-decoration: none;
+        transition: ease-in-out .1s;
+    }
+
+    .landing a:hover {
+        color: #cccaca;
+        text-decoration: none;
+    }
+
+    .landing .archive {
+        font-size: 1.55em;
+        margin-top: -220px;
+    }
+
+    pre {
+        font-size: 7.69px;
+        margin-top: -160px;
+        background: -webkit-linear-gradient(left, rgba(22, 22, 22, 0.712), #00000079);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(to right, rgb(255, 255, 255), #000000);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    pre.ascii-art {
+        font-size: 12px;
+        margin-top: -40px;
+    }
+
+    .cord {
+        margin-top: -30px;
+        width: auto;
+        height: auto;
+        max-width: 70%;
+        cursor: pointer;
+    }
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: -2;
+    }
+    
+
+/* Media query */
+@media (max-width: 1000px) {
+
+    #enter {
+        display: none;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .landing {
+        width: 100%;
+    }
+
+    pre {
+        font-size: 9px;
+    }
+
+}
